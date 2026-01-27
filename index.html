@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Full-stack developer portfolio showcasing neo-brutalist web design and development projects. Specializing in React, Node.js, and creating raw digital experiences."/>
+    <meta name="author" content="FAHRUL SANJAYA"/>
+    <meta name="theme-color" content="#0d7ff2"/>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://buildwithjay.me/"/>
+    <meta property="og:title" content="FAHRUL SANJAYA | Neo-Brutalist Full-Stack Developer"/>
+    <meta property="og:description" content="I build digital chaos into order. Full-stack developer based in Surabaya, Indonesia creating raw, unfiltered web experiences."/>
+    <meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuA-iLuKhXYPrJzFR_5ptE1HDYsDak0mA7YJAgmegUWkUxeQDvGRFPYZf8liY6IG51RY797776zl4BnUEPLcAlOoT9Vwb7z2pL_YhkWvm4HFsl6MzmG4hh8pQxJkG-vLVcLOdy_0mnwz9KiuZCNKhOZ2VzFi3WMHFhC-0VqGWiWSIk50oW3bcLV4G8rlHRG2iJbB7urwocmggS6PvrQSSQnLyHkRQczo4ZuctWGtMCV2WSvmIWT0kFh7DdzRcR0T7I5bNaEMYIKo2j0"/>
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:url" content="https://buildwithjay.me/"/>
+    <meta property="twitter:title" content="FAHRUL SANJAYA | Neo-Brutalist Full-Stack Developer"/>
+    <meta property="twitter:description" content="I build digital chaos into order. Full-stack developer based in Surabaya, Indonesia creating raw, unfiltered web experiences."/>
+    <meta property="twitter:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuA-iLuKhXYPrJzFR_5ptE1HDYsDak0mA7YJAgmegUWkUxeQDvGRFPYZf8liY6IG51RY797776zl4BnUEPLcAlOoT9Vwb7z2pL_YhkWvm4HFsl6MzmG4hh8pQxJkG-vLVcLOdy_0mnwz9KiuZCNKhOZ2VzFi3WMHFhC-0VqGWiWSIk50oW3bcLV4G8rlHRG2iJbB7urwocmggS6PvrQSSQnLyHkRQczo4ZuctWGtMCV2WSvmIWT0kFh7DdzRcR0T7I5bNaEMYIKo2j0"/>
+
+    <title>FAHRUL SANJAYA | Neo-Brutalist Full-Stack Developer Portfolio</title>
+    <link rel="canonical" href="https://buildwithjay.me/"/>
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fahrul Sanjaya",
+        "jobTitle": "Full-Stack Developer",
+        "url": "https://buildwithjay.me",
+        "email": "fahrulsanjaya@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Surabaya",
+            "addressCountry": "Indonesia"
+        },
+        "knowsAbout": ["Laravel", "Next.js", "Golang", "Flutter", "PostgreSQL", "MySQL", "AWS", "TypeScript", "Tailwind CSS"],
+        "description": "Full-stack developer based in Surabaya, Indonesia creating raw, unfiltered web experiences."
+    }
+    </script>
+
+    <!-- Tailwind Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d7ff2",
+                        "accent-yellow": "#E2F700",
+                        "background-light": "#ffffff",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "mono": ["monospace"]
+                    },
+                    boxShadow: {
+                        'brutal': '6px 6px 0px 0px #000000',
+                        'brutal-hover': '10px 10px 0px 0px #000000',
+                        'brutal-sm': '3px 3px 0px 0px #000000',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        * {
+            border-radius: 0px !important;
+        }
+
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        .sr-only:focus {
+            position: static;
+            width: auto;
+            height: auto;
+            padding: inherit;
+            margin: inherit;
+            overflow: visible;
+            clip: auto;
+            white-space: normal;
+        }
+
+        /* Focus visible styles for better keyboard navigation */
+        *:focus-visible {
+            outline: 4px solid #0d7ff2;
+            outline-offset: 2px;
+        }
+
+        button:focus-visible,
+        a:focus-visible {
+            outline: 4px solid #0d7ff2;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-background-light text-black overflow-x-hidden">
+
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-accent-yellow border-4 border-black px-4 py-2 font-bold z-[100]">
+        Skip to main content
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b-4 border-black px-4 sm:px-6 py-3 sm:py-4" role="navigation" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 border-4 border-black bg-accent-yellow flex items-center justify-center shadow-brutal-sm" aria-hidden="true">
+                    <span class="material-symbols-outlined text-black font-bold text-xl sm:text-2xl">terminal</span>
+                </div>
+                <h1 class="text-lg sm:text-xl md:text-2xl font-black tracking-tighter uppercase">FAHRUL SANJAYA</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-6 lg:gap-8">
+                <a class="text-base sm:text-lg font-bold hover:underline decoration-4 underline-offset-4 decoration-primary" href="#about" aria-label="Go to about section">ABOUT</a>
+                <a class="text-base sm:text-lg font-bold hover:underline decoration-4 underline-offset-4 decoration-primary" href="#work" aria-label="Go to work section">WORK</a>
+                <a class="text-base sm:text-lg font-bold hover:underline decoration-4 underline-offset-4 decoration-primary" href="#stack" aria-label="Go to tech stack section">STACK</a>
+                <a class="text-base sm:text-lg font-bold hover:underline decoration-4 underline-offset-4 decoration-primary" href="#contact" aria-label="Go to contact section">CONTACT</a>
+                <a href="mailto:fahrulsanjaya@gmail.com" class="bg-accent-yellow border-4 border-black px-4 sm:px-6 py-2 font-black text-base sm:text-lg shadow-brutal hover:shadow-brutal-hover hover:-translate-y-1 transition-all active:shadow-none active:translate-x-1 active:translate-y-1">
+                    HIRE ME
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="md:hidden border-2 border-black p-2 shadow-brutal-sm active:shadow-none active:translate-y-[2px] min-w-[48px] min-h-[48px] flex items-center justify-center"
+                aria-label="Toggle mobile menu"
+                aria-expanded="false"
+                id="mobile-menu-button"
+            >
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden mt-4 pb-4 border-t-4 border-black pt-4" id="mobile-menu" role="menu">
+            <div class="flex flex-col gap-4">
+                <a href="#about" class="text-lg font-bold hover:underline decoration-4 underline-offset-4 decoration-primary py-2" role="menuitem">ABOUT</a>
+                <a href="#work" class="text-lg font-bold hover:underline decoration-4 underline-offset-4 decoration-primary py-2" role="menuitem">WORK</a>
+                <a href="#stack" class="text-lg font-bold hover:underline decoration-4 underline-offset-4 decoration-primary py-2" role="menuitem">STACK</a>
+                <a href="#contact" class="text-lg font-bold hover:underline decoration-4 underline-offset-4 decoration-primary py-2" role="menuitem">CONTACT</a>
+                <a href="mailto:fahrulsanjaya@gmail.com" class="bg-accent-yellow border-4 border-black px-6 py-3 font-black text-lg shadow-brutal text-center" role="menuitem">
+                    HIRE ME
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" class="pt-20 min-h-screen flex flex-col w-full max-w-7xl mx-auto border-x-4 border-black bg-white">
+
+        <!-- Hero Section -->
+        <section class="relative border-b-4 border-black bg-white overflow-hidden" aria-labelledby="hero-heading">
+            <div class="flex flex-col lg:flex-row min-h-[75vh] lg:min-h-[85vh]">
+                <!-- Hero Text Content -->
+                <div class="w-full lg:w-7/12 p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-center relative z-10 border-b-4 lg:border-b-0 lg:border-r-4 border-black bg-white">
+                    <!-- EST Badge -->
+                    <div class="absolute top-4 left-4 sm:top-6 sm:left-6 md:top-12 md:left-12 bg-accent-yellow border-4 border-black px-3 py-1.5 sm:px-4 sm:py-2 transform -rotate-3 shadow-brutal z-20">
+                        <span class="font-mono font-bold text-xs sm:text-sm tracking-widest">EST. 2020</span>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <div class="relative z-10 mt-8 sm:mt-10 lg:mt-0">
+                        <h2 id="hero-heading" class="text-[clamp(3.5rem,12vw,8rem)] sm:text-[clamp(4rem,13vw,9rem)] lg:text-[clamp(5rem,14vw,11rem)] leading-[0.85] font-black tracking-[-0.05em] lg:tracking-[-0.08em] uppercase">
+                            HEL<br/>LO<span class="text-primary">.</span>
+                        </h2>
+                        <div class="absolute top-[15%] sm:top-[18%] lg:top-[20%] right-0 sm:right-12 md:right-20 lg:-right-12 bg-black text-white border-4 border-black px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2 transform rotate-6 shadow-brutal z-30" aria-hidden="true">
+                            <span class="font-mono font-bold text-xs sm:text-sm md:text-base lg:text-lg">UI/UX DESIGN</span>
+                        </div>
+                    </div>
+
+                    <!-- Description Box -->
+                    <div class="relative z-20 -mt-4 sm:-mt-6 ml-0 sm:ml-2 md:ml-12 max-w-full sm:max-w-lg mt-6">
+                        <div class="bg-white border-4 border-black p-4 sm:p-6 md:p-8 shadow-brutal transform -rotate-1 hover:rotate-0 transition-transform">
+                            <p class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-mono leading-tight uppercase">
+                                I build digital chaos into order. Full-stack developer based in Surabaya, Indonesia creating raw, unfiltered web experiences.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8 md:mt-12 ml-0 sm:ml-2 md:ml-12 relative z-30">
+                        <a href="#work" class="bg-accent-yellow border-4 border-black px-6 py-4 sm:px-8 sm:py-4 font-black text-base sm:text-lg md:text-xl shadow-brutal hover:shadow-brutal-hover hover:-translate-y-1 transition-all active:shadow-none active:translate-x-1 active:translate-y-1 flex items-center justify-center gap-2 min-h-[52px]">
+                            <span>SEE PROJECTS</span>
+                            <span class="material-symbols-outlined font-bold" aria-hidden="true">arrow_downward</span>
+                        </a>
+                        <a href="https://github.com/Rahvayana" target="_blank" rel="noopener noreferrer" class="bg-white border-4 border-black px-6 py-4 sm:px-8 sm:py-4 font-black text-base sm:text-lg md:text-xl shadow-brutal hover:shadow-brutal-hover hover:-translate-y-1 transition-all active:shadow-none active:translate-x-1 active:translate-y-1 flex items-center justify-center gap-2 min-h-[52px]">
+                            <span>GITHUB</span>
+                            <span class="material-symbols-outlined font-bold" aria-hidden="true">code</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Visual -->
+                <div class="w-full lg:w-5/12 bg-gray-50 relative flex items-center justify-center p-6 sm:p-8 md:p-12 overflow-hidden" aria-hidden="true">
+                    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#000 1.5px, transparent 1.5px); background-size: 24px 24px;"></div>
+                    <div class="relative w-full max-w-[280px] sm:max-w-sm aspect-[4/5] lg:aspect-square group">
+                        <div class="absolute inset-0 bg-black translate-x-2 translate-y-2 sm:translate-x-3 sm:translate-y-3 md:translate-x-5 md:translate-y-5 border-4 border-black"></div>
+                        <div class="absolute inset-0 bg-primary translate-x-1 translate-y-1 sm:translate-x-1.5 sm:translate-y-1.5 md:translate-x-2.5 md:translate-y-2.5 border-4 border-black"></div>
+                        <div class="absolute inset-0 bg-white border-4 border-black flex flex-col items-center justify-center z-10 overflow-hidden">
+                            <span class="material-symbols-outlined text-[8rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem] text-black group-hover:scale-110 transition-transform duration-300 select-none">sentiment_very_satisfied</span>
+                        </div>
+                        <div class="absolute -bottom-4 -left-3 sm:-bottom-5 sm:-left-4 md:-bottom-5 md:-left-10 bg-accent-yellow border-4 border-black px-3 py-2 sm:px-4 sm:py-3 shadow-brutal transform -rotate-3 z-20 flex items-center gap-2 sm:gap-3 hover:scale-105 transition-transform hover:rotate-0">
+                            <div class="w-3 h-3 sm:w-4 sm:h-4 bg-red-500 border-2 border-black rounded-full animate-pulse"></div>
+                            <span class="font-mono font-bold text-xs sm:text-sm md:text-base">AVAILABLE FOR HIRE</span>
+                        </div>
+                        <div class="absolute -top-4 -right-3 sm:-top-5 sm:-right-4 md:-top-5 md:-right-8 bg-white border-4 border-black px-3 py-1.5 sm:px-4 sm:py-2 shadow-brutal transform rotate-6 z-20 hover:scale-105 transition-transform hover:rotate-0">
+                            <span class="font-mono font-bold text-xs sm:text-sm md:text-base">FULL-STACK</span>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-6 right-6 md:bottom-8 md:right-8 hidden sm:block">
+                        <span class="material-symbols-outlined text-4xl sm:text-5xl md:text-6xl text-black opacity-20 transform rotate-45">star</span>
+                    </div>
+                    <div class="absolute top-6 left-6 md:top-8 md:left-8 hidden sm:block">
+                        <span class="material-symbols-outlined text-3xl sm:text-4xl md:text-5xl text-black opacity-10 -rotate-12">bolt</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- About Section -->
+    <section class="border-b-4 border-black" id="about" aria-labelledby="about-heading">
+        <div class="bg-accent-yellow border-b-4 border-black p-4 sm:p-6">
+            <h2 id="about-heading" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-black tracking-tighter uppercase flex items-center gap-2 sm:gap-4">
+                <span class="material-symbols-outlined text-4xl sm:text-5xl" aria-hidden="true">person</span>
+                About Me
+            </h2>
+        </div>
+        <div class="p-6 sm:p-8 md:p-12 lg:p-16 bg-white">
+            <div class="max-w-4xl">
+                <div class="border-4 border-black p-6 sm:p-8 md:p-10 lg:p-12 shadow-brutal bg-white">
+                    <h3 class="text-xl sm:text-2xl md:text-3xl font-black uppercase mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
+                        <span class="material-symbols-outlined text-primary text-3xl sm:text-4xl">work</span>
+                        <span class="flex-1">By Day, Professional Developer</span>
+                    </h3>
+                    <p class="text-base sm:text-lg md:text-xl font-mono mb-6 sm:mb-8 border-l-4 border-primary pl-4 sm:pl-6 leading-relaxed">
+                        I work as a full-stack developer at a company, building robust applications and solving complex problems.
+                    </p>
+
+                    <h3 class="text-xl sm:text-2xl md:text-3xl font-black uppercase mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
+                        <span class="material-symbols-outlined text-3xl sm:text-4xl" style="color: #E2F700; text-shadow: 0 0 0 2px black;">code_blocks</span>
+                        <span class="flex-1">By Night, Personal Projects</span>
+                    </h3>
+                    <p class="text-base sm:text-lg md:text-xl font-mono mb-4 sm:mb-6 border-l-4 border-accent-yellow pl-4 sm:pl-6 leading-relaxed">
+                        This portfolio showcases my personal projects and experiments—work I do outside my professional role. These are the ideas I'm passionate about, the technologies I want to explore, and the creative solutions I build for the pure joy of creating.
+                    </p>
+                    <p class="text-base sm:text-lg md:text-xl font-mono border-l-4 border-black pl-4 sm:pl-6 leading-relaxed">
+                        From Surabaya, Indonesia, I've been coding since 2020, constantly learning and pushing the boundaries of what's possible with Laravel, Next.js, Golang, Flutter, and cloud technologies like AWS.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work/Projects Section -->
+    <section class="border-b-4 border-black" id="work" aria-labelledby="work-heading">
+        <div class="bg-primary border-b-4 border-black p-4 sm:p-6">
+            <h2 id="work-heading" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter uppercase flex items-center gap-2 sm:gap-4">
+                <span class="material-symbols-outlined text-4xl sm:text-5xl" aria-hidden="true">folder_open</span>
+                Selected Work
+            </h2>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0">
+            <!-- Project 1: E-Com Platform -->
+            <a href="ecommerce-platform.html" class="group border-b-4 md:border-b-0 md:border-r-4 border-black p-6 sm:p-8 hover:bg-slate-50 transition-colors relative block">
+                <div class="w-full aspect-square border-4 border-black shadow-brutal bg-cover bg-center mb-4 sm:mb-6 group-hover:-translate-y-2 transition-transform duration-200" role="img" aria-label="Modern ecommerce dashboard interface with charts and graphs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-iLuKhXYPrJzFR_5ptE1HDYsDak0mA7YJAgmegUWkUxeQDvGRFPYZf8liY6IG51RY797776zl4BnUEPLcAlOoT9Vwb7z2pL_YhkWvm4HFsl6MzmG4hh8pQxJkG-vLVcLOdy_0mnwz9KiuZCNKhOZ2VzFi3WMHFhC-0VqGWiWSIk50oW3bcLV4G8rlHRG2iJbB7urwocmggS6PvrQSSQnLyHkRQczo4ZuctWGtMCV2WSvmIWT0kFh7DdzRcR0T7I5bNaEMYIKo2j0");'>
+                </div>
+                <div class="flex justify-between items-start mb-3 sm:mb-4">
+                    <h3 class="text-2xl sm:text-3xl font-black uppercase">ShopFlow</h3>
+                    <span class="material-symbols-outlined text-3xl sm:text-4xl group-hover:rotate-45 transition-transform" aria-hidden="true">arrow_outward</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
+                    <span class="bg-black text-white px-2.5 py-1 sm:px-3 sm:py-1 font-mono text-xs sm:text-sm font-bold">LARAVEL</span>
+                    <span class="bg-white border-2 border-black px-2.5 py-1 sm:px-3 sm:py-1 font-mono text-xs sm:text-sm font-bold">NEXT.JS</span>
+                    <span class="bg-white border-2 border-black px-2.5 py-1 sm:px-3 sm:py-1 font-mono text-xs sm:text-sm font-bold">STRIPE</span>
+                </div>
+                <p class="text-base sm:text-lg font-medium border-l-4 border-accent-yellow pl-3 sm:pl-4 leading-relaxed">
+                    A high-performance headless commerce solution handling 10k+ concurrent users.
+                </p>
+            </a>
+
+            <!-- Project 2: Crypto Dash -->
+            <article class="group border-b-4 border-black p-6 sm:p-8 hover:bg-slate-50 transition-colors relative">
+                <div class="w-full aspect-square border-4 border-black shadow-brutal bg-cover bg-center mb-4 sm:mb-6 group-hover:-translate-y-2 transition-transform duration-200" role="img" aria-label="Dark themed cryptocurrency trading dashboard on a monitor" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBq7RL8lq2J7v7lsnhi6i7692Z2-pgXO4RnM8azGcfGWzW-NKfXWmoZS8zhd1ZUBzVk1wTKS3YcNo-npyoFVTn2pUsOO22NjKNt7uBKdapMQKQErOXrBGkobWUNV131-jwQ8mJWmPAnu9R_5H3SDW5ris3WE2MpGisfvBfGGeBe5hN4UOF-n2LdVf2m_6AyQERDU2wMPt3rurHbewcHBVf1ruoDT4UfF73y8leXFuXbp3f6ecaHCzcqmUSgwnCzj6aRgJRgBeQcpJg");'>
+                </div>
+                <div class="flex justify-between items-start mb-3 sm:mb-4">
+                    <h3 class="text-2xl sm:text-3xl font-black uppercase">Crypto Dash</h3>
+                    <span class="material-symbols-outlined text-3xl sm:text-4xl group-hover:rotate-45 transition-transform" aria-hidden="true">arrow_outward</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
+                    <span class="bg-black text-white px-2.5 py-1 sm:px-3 sm:py-1 font-mono text-xs sm:text-sm font-bold">VUE</span>
+                    <span class="bg-white border-2 border-black px-2.5 py-1 sm:px-3 sm:py-1 font-mono text-xs sm:text-sm font-bold">D3.JS</span>
+                    <span class="bg-white border-2 border-black px-2.5 py-1 sm:px-3 sm:py-1 font-mono text-xs sm:text-sm font-bold">WEBSOCKETS</span>
+                </div>
+                <p class="text-base sm:text-lg font-medium border-l-4 border-primary pl-3 sm:pl-4 leading-relaxed">
+                    Real-time visualization of market data with sub-millisecond latency updates.
+                </p>
+            </article>
+
+            <!-- Project 3: Design System -->
+            <article class="group border-b-4 md:border-b-0 md:border-r-4 border-black p-6 sm:p-8 hover:bg-slate-50 transition-colors relative">
+                <div class="w-full aspect-square border-4 border-black shadow-brutal bg-cover bg-center mb-4 sm:mb-6 group-hover:-translate-y-2 transition-transform duration-200" role="img" aria-label="Abstract geometric shapes representing design system components" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQipVPDV4QCNYFUuohNa8p_lYGG9i6_zWRUJDadFhtjPIjpPDzHFd3BY7aGG1hOWDondrvnBmirpzf-v_FS6qd-HrbdNasw7d_LbAecC8cdO03HAC2Z47DoRUAJ2NmfNqxbTkiqOeUT-abNSYbv98o_Dvi9e-dydSw0qH8poa7Ds682u4fDFp06SmyrQie7v5MG1I1BvBGQic70xWUo0tGNfLJJIGQPblwT1-83MTwgNHZqXe9sQY2njaoft1l9fDyJgHfeyS_bhE");'>
+                </div>
+                <div class="flex justify-between items-start mb-3 sm:mb-4">
+                    <h3 class="text-2xl sm:text-3xl font-black uppercase">Design System</h3>
+                    <span class="material-symbols-outlined text-3xl sm:text-4xl group-hover:rotate-45 transition-transform" aria-hidden="true">arrow_outward</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
+                    <span class="bg-black text-white px-2.5 py-1 sm:px-3 sm:py-1 font-mono text-xs sm:text-sm font-bold">FIGMA</span>
+                    <span class="bg-white border-2 border-black px-2.5 py-1 sm:px-3 sm:py-1 font-mono text-xs sm:text-sm font-bold">STORYBOOK</span>
+                </div>
+                <p class="text-base sm:text-lg font-medium border-l-4 border-accent-yellow pl-3 sm:pl-4 leading-relaxed">
+                    Comprehensive UI kit ensuring consistency across 12 different product lines.
+                </p>
+            </article>
+
+            <!-- View More Work -->
+            <div class="group p-6 sm:p-8 hover:bg-slate-50 transition-colors relative flex flex-col justify-center items-center bg-accent-yellow">
+                <h3 class="text-3xl sm:text-4xl font-black text-center mb-4 sm:mb-6 uppercase">View<br/>More<br/>Work<br/></h3>
+                <a class="w-16 h-16 sm:w-20 sm:h-20 border-4 border-black bg-white flex items-center justify-center shadow-brutal hover:shadow-brutal-hover hover:-translate-y-1 transition-all" href="#" aria-label="View more projects">
+                    <span class="material-symbols-outlined text-3xl sm:text-4xl" aria-hidden="true">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="border-b-4 border-black p-6 sm:p-8 md:p-12 lg:p-16" id="stack" aria-labelledby="stack-heading">
+        <h2 id="stack-heading" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-8 sm:mb-12 flex items-center gap-2 sm:gap-4">
+            <span class="material-symbols-outlined text-4xl sm:text-5xl" aria-hidden="true">memory</span>
+            Tech Stack
+        </h2>
+        <div class="flex flex-wrap gap-3 sm:gap-4">
+            <div class="border-4 border-black px-4 py-3 sm:px-6 sm:py-4 bg-red-600 text-white shadow-brutal hover:-translate-y-1 transition-transform cursor-default">
+                <span class="font-mono font-bold text-base sm:text-lg lg:text-xl">LARAVEL</span>
+            </div>
+            <div class="border-4 border-black px-4 py-3 sm:px-6 sm:py-4 bg-white shadow-brutal hover:-translate-y-1 transition-transform cursor-default">
+                <span class="font-mono font-bold text-base sm:text-lg lg:text-xl">NEXT.JS</span>
+            </div>
+            <div class="border-4 border-black px-4 py-3 sm:px-6 sm:py-4 bg-cyan-600 text-white shadow-brutal hover:-translate-y-1 transition-transform cursor-default">
+                <span class="font-mono font-bold text-base sm:text-lg lg:text-xl">GOLANG</span>
+            </div>
+            <div class="border-4 border-black px-4 py-3 sm:px-6 sm:py-4 bg-accent-yellow shadow-brutal hover:-translate-y-1 transition-transform cursor-default">
+                <span class="font-mono font-bold text-base sm:text-lg lg:text-xl">FLUTTER</span>
+            </div>
+            <div class="border-4 border-black px-4 py-3 sm:px-6 sm:py-4 bg-primary text-white shadow-brutal hover:-translate-y-1 transition-transform cursor-default">
+                <span class="font-mono font-bold text-base sm:text-lg lg:text-xl">POSTGRESQL</span>
+            </div>
+            <div class="border-4 border-black px-4 py-3 sm:px-6 sm:py-4 bg-blue-900 text-white shadow-brutal hover:-translate-y-1 transition-transform cursor-default">
+                <span class="font-mono font-bold text-base sm:text-lg lg:text-xl">MYSQL</span>
+            </div>
+            <div class="border-4 border-black px-4 py-3 sm:px-6 sm:py-4 bg-orange-500 text-white shadow-brutal hover:-translate-y-1 transition-transform cursor-default">
+                <span class="font-mono font-bold text-base sm:text-lg lg:text-xl">AWS</span>
+            </div>
+            <div class="border-4 border-black px-4 py-3 sm:px-6 sm:py-4 bg-white shadow-brutal hover:-translate-y-1 transition-transform cursor-default">
+                <span class="font-mono font-bold text-base sm:text-lg lg:text-xl">TYPESCRIPT</span>
+            </div>
+            <div class="border-4 border-black px-4 py-3 sm:px-6 sm:py-4 bg-black text-white shadow-brutal hover:-translate-y-1 transition-transform cursor-default">
+                <span class="font-mono font-bold text-base sm:text-lg lg:text-xl">TAILWIND</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer/Contact Section -->
+    <footer class="bg-black text-white p-6 sm:p-8 md:p-12 lg:p-16 xl:p-24 relative overflow-hidden" id="contact" role="contentinfo" aria-labelledby="contact-heading">
+        <div class="absolute -right-16 -bottom-16 sm:-right-20 sm:-bottom-20 opacity-20 pointer-events-none" aria-hidden="true">
+            <span class="material-symbols-outlined text-[180px] sm:text-[220px] md:text-[280px] lg:text-[300px]">chat_bubble</span>
+        </div>
+
+        <div class="relative z-10 max-w-4xl">
+            <h2 id="contact-heading" class="text-[clamp(2.5rem,10vw,6rem)] sm:text-[clamp(3rem,10vw,7rem)] leading-none font-black tracking-[-0.03em] mb-6 sm:mb-8 text-accent-yellow">
+                LET'S TALK.
+            </h2>
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl font-mono mb-8 sm:mb-12 max-w-2xl border-l-4 border-primary pl-4 sm:pl-6 leading-relaxed">
+                Got a project that needs a raw, distinctive touch? I'm currently available for freelance work and coffee chats.
+            </p>
+
+            <div class="flex flex-col gap-6 items-start">
+                <a class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold hover:text-accent-yellow hover:translate-x-2 sm:hover:translate-x-4 transition-all flex items-center gap-3 sm:gap-4 break-all" href="mailto:fahrulsanjaya@gmail.com">
+                    <span class="material-symbols-outlined text-3xl sm:text-4xl" aria-hidden="true">mail</span>
+                    <span class="text-xl sm:text-2xl md:text-3xl lg:text-4xl">fahrulsanjaya@gmail.com</span>
+                </a>
+
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 w-full sm:w-auto">
+                    <a class="bg-white text-black border-4 border-white hover:border-accent-yellow hover:bg-accent-yellow px-6 py-3 sm:px-8 sm:py-3 font-bold text-base sm:text-lg shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:-translate-y-1 transition-all w-full sm:w-auto text-center" href="https://x.com/jaysanjaya06" target="_blank" rel="noopener noreferrer" aria-label="Visit X (Twitter) profile">
+                        X / TWITTER
+                    </a>
+                    <a class="bg-primary text-white border-4 border-primary hover:border-white hover:bg-white hover:text-black px-6 py-3 sm:px-8 sm:py-3 font-bold text-base sm:text-lg shadow-[4px_4px_0px_0px_rgba(13,127,242,0.5)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:-translate-y-1 transition-all w-full sm:w-auto text-center" href="https://linkedin.com/in/fahrulsanjaya" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                        LINKEDIN
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="mt-16 sm:mt-24 pt-6 sm:pt-8 border-t-2 border-zinc-800 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 font-mono text-xs sm:text-sm text-zinc-500">
+                <p>© 2020 FAHRUL SANJAYA.</p>
+                <p>MADE IN SURABAYA, INDONESIA.</p>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+    <!-- JavaScript for interactive functionality -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+
+                // Change icon based on state
+                const icon = this.querySelector('.material-symbols-outlined');
+                if (icon) {
+                    icon.textContent = isExpanded ? 'menu' : 'close';
+                }
+            });
+
+            // Close menu when clicking on a link
+            const menuLinks = mobileMenu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    const icon = mobileMenuButton.querySelector('.material-symbols-outlined');
+                    if (icon) {
+                        icon.textContent = 'menu';
+                    }
+                });
+            });
+        }
+
+        // Smooth scroll for anchor links (for browsers that don't support CSS scroll-behavior)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Close mobile menu on window resize to desktop size
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768 && mobileMenu) {
+                mobileMenu.classList.add('hidden');
+                if (mobileMenuButton) {
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    const icon = mobileMenuButton.querySelector('.material-symbols-outlined');
+                    if (icon) {
+                        icon.textContent = 'menu';
+                    }
+                }
+            }
+        });
+    </script>
+
+</body></html>
